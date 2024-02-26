@@ -26,8 +26,8 @@ const AddTodo=()=>{
             <h1 className="mt-5 pt-4 fw-bold">My ToDo</h1>
             <div className="form3 bg-light text-dark w-25 h-100">
           <h2 className="mt-4 mb-5">What's your plan?</h2>
-          <input type="text" class="form-control  w-50 d-inline me-2 border border-info bg-light text-"value={content} name="content" onChange={handleChange} placeholder="Add your plan...."/>
-          <button type="button" class="btn btn-outline-info" onClick={add}>Add</button>
+          <input type="text" className="form-control  w-50 d-inline me-2 border border-info bg-light text-"value={content} name="content" onChange={handleChange} placeholder="Add your plan...."/>
+          <button type="button" className="btn btn-outline-info" onClick={add}>Add</button>
           {contentError?<div className="error">{contentError}</div>:null}
           <Listtodo/>
         </div>
